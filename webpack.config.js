@@ -4,7 +4,7 @@ const path=require('path');
 
 const target = 'docs';
 module.exports={
-	mode: 'development',
+	mode: 'production',
 	devServer: {
 		contentBase: target, // files served
 	},

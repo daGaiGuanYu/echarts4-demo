@@ -3,6 +3,22 @@
 <head>
 <title>echarts4-demo</title>
 <meta charset="utf-8">
+<style>
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg)
+	}
+}
+#app {
+	margin: 400px auto;
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	border-left: 3px dashed #888;
+	animation: spin 1s infinite
+}
+</style>
 </head>
 <body>
 	<div id="app"></div>
