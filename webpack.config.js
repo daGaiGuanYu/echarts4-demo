@@ -1,11 +1,17 @@
 const VueLoaderPlugin=require('vue-loader/lib/plugin');
 const HtmlWebpackPlugin=require('html-webpack-plugin');
+const path=require('path');
 
+const target = 'docs';
 module.exports={
 	mode: 'development',
 	devServer: {
-		contentBase: 'dist', // files served
+		contentBase: target, // files served
 	},
+	output: {
+    filename: 'main.js',
+    path: path.resolve(__dirname, target)
+  },
 	module: {
 		rules: [
 			{
