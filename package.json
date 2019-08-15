@@ -33,6 +33,7 @@
     "webpack-dev-server": "^3.8.0"
   },
   "dependencies": {
+    "echarts": "^4.2.1",
     "vue": "^2.6.10"
   }
 }
