@@ -23,4 +23,4 @@
 + 画图逻辑和样式逻辑分开，样式逻辑单独配相应的案例
 + 图形类型多
 
-[点击这里开始探索]
+[点击这里开始探索](https://dagaiguanyu.github.io/echarts4-demo/)
