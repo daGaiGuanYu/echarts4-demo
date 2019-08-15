@@ -4,7 +4,8 @@
   "description": "echarts4's demo",
   "main": "index.js",
   "scripts": {
-    "example": "webpack-dev-server --hot"
+    "example": "webpack-dev-server --hot",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,8 @@
   "devDependencies": {
     "css-loader": "^3.2.0",
     "html-webpack-plugin": "^3.2.0",
+    "sass": "^1.22.9",
+    "sass-loader": "^7.2.0",
     "style-loader": "^1.0.0",
     "vue-loader": "^15.7.1",
     "vue-template-compiler": "^2.6.10",

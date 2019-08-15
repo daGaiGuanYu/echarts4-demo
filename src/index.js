@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import App from './component/app.vue';
-import './page/index.css';
+import './page/index.sass';
 
 new Vue({
   el: '#app',

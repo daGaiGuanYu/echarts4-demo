@@ -5,8 +5,6 @@ module.exports={
 	mode: 'development',
 	devServer: {
 		contentBase: 'dist', // files served
-		host: '0.0.0.0', // 允许非本机访问
-		port: 8888
 	},
 	module: {
 		rules: [
@@ -14,8 +12,13 @@ module.exports={
 				test: /\.vue$/,
 				loader: 'vue-loader'
 			},{
-				test: /\.css$/,
-				use: ['vue-style-loader', 'css-loader']
+				test: /\.sass$/,
+				use: ['vue-style-loader', 'css-loader', {
+					loader: 'sass-loader',
+					options: {
+						indentedSyntax: true
+					}
+				}]
 			}
 		]
 	},
