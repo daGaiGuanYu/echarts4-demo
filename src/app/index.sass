@@ -15,10 +15,20 @@
     display: flex
     .menu
       width: 180px
+      border-right: $border
+      .item
+        display: block
+        padding: 4px 20px
+        text-decoration: none
     .types
       flex: 1
       .type
+        .type-title
+          margin-left: 30px
         .charts
+          display: flex
+          flex-wrap: wrap
+          justify-content: space-around
           .chart
             width: 600px
             height: 400px

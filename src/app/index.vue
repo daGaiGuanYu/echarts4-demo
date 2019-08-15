@@ -12,9 +12,12 @@
       </div>
       <div class="types">
         <div class="type" v-for="type in all">
-          <div class="title" :id="type[0].typeName">{{type[0].typeName}}</div>
+          <h3 class="type-title" :id="type[0].typeName">{{type[0].typeName}}</h3>
           <div class="charts">
-            <div class="chart" v-for="chart in type" :id="chart.name">{{chart.name}}</div>
+            <div class="chart-wrapper" v-for="chart in type">
+              <div class="chart-title">{{chart.name}}</div>
+              <div class="chart" :id="chart.name"></div>
+            </div>
           </div>
         </div>
       </div>
