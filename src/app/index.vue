@@ -15,7 +15,10 @@
           <h3 class="type-title" :id="type[0].typeName">{{type[0].typeName}}</h3>
           <div class="charts">
             <div class="chart-wrapper" v-for="chart in type">
-              <div class="chart-title">{{chart.name}}</div>
+              <div class="chart-title">
+                {{chart.name}}
+                <span v-if="chart.desc" class="desc" v-html="chart.desc"></span>
+              </div>
               <div :class="{
                   chart: true,
                   'chart-bg': chart.size&&chart.size=='bg'
@@ -31,6 +34,7 @@
 import all from '../examples/index.js';
 import echarts from 'echarts';
 import 'echarts/map/js/china.js' // 引入中国地图数据
+import 'echarts/map/js/province/liaoning.js' // 引入辽宁省地图数据
 
 export default {
   data(){
