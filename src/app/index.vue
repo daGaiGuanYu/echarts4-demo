@@ -16,7 +16,10 @@
           <div class="charts">
             <div class="chart-wrapper" v-for="chart in type">
               <div class="chart-title">{{chart.name}}</div>
-              <div class="chart" :id="chart.name"></div>
+              <div :class="{
+                  chart: true,
+                  'chart-bg': chart.size&&chart.size=='bg'
+                }" :id="chart.name"></div>
             </div>
           </div>
         </div>
