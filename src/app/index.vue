@@ -27,6 +27,7 @@
 <script>
 import all from '../examples/index.js';
 import echarts from 'echarts';
+import 'echarts/map/js/china.js' // 引入中国地图数据
 
 export default {
   data(){

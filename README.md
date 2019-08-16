@@ -24,3 +24,11 @@
 + 图形类型多
 
 [点击这里开始探索](https://dagaiguanyu.github.io/echarts4-demo/)
+
+# 本地测试
+``` bash
+git clone https://github.com/daGaiGuanYu/echarts4-demo.git
+cd echarts4-demo
+npm install
+npm run example
+```
