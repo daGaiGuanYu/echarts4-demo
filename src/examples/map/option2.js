@@ -1,6 +1,6 @@
 export default {
   typeName: '地图',
-  name: '缩放，鼠标滚轮滚一滚',
+  name: '缩放，鼠标滚轮滚一滚、拖动',
   desc: `(需要 <b>import 'echarts/map/js/china.js'</b>)`,
   size: 'bg',
   option: {

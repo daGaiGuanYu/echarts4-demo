@@ -4,7 +4,7 @@ const path=require('path');
 
 const target = 'docs';
 module.exports={
-	mode: 'production',
+	mode: 'development',
 	devServer: {
 		contentBase: target, // files served
 	},
@@ -15,6 +15,9 @@ module.exports={
 	module: {
 		rules: [
 			{
+				test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
+        loader: 'url-loader'
+			},{
 				test: /\.vue$/,
 				loader: 'vue-loader'
 			},{

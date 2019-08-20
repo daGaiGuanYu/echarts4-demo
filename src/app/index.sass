@@ -1,13 +1,21 @@
 @import '../style/sass.sass'
+
 .app
   background: #f8f8f8
   height: 100%
   .header
+    background: $color-main-dark
     +space-between
     border-bottom: $border
     .title
+      cursor: pointer
+      +align-center
+      color: $color-font-white
       padding: 10px 20px
       font-weight: bold
+      user-select: none
+      .logo
+        margin-right: 10px
     .right
       margin-right: 20px
 

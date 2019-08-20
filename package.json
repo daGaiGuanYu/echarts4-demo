@@ -4,7 +4,7 @@
   "description": "echarts4's demo",
   "main": "index.js",
   "scripts": {
-    "example": "webpack-dev-server --hot",
+    "dev": "webpack-dev-server --hot",
     "build": "webpack"
   },
   "repository": {
@@ -26,6 +26,7 @@
     "sass": "^1.22.9",
     "sass-loader": "^7.2.0",
     "style-loader": "^1.0.0",
+    "url-loader": "^2.1.0",
     "vue-loader": "^15.7.1",
     "vue-template-compiler": "^2.6.10",
     "webpack": "^4.39.2",

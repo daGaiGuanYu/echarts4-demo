@@ -30,5 +30,5 @@
 git clone https://github.com/daGaiGuanYu/echarts4-demo.git
 cd echarts4-demo
 npm install
-npm run example
+npm run dev
 ```

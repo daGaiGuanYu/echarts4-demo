@@ -1,7 +1,10 @@
 <template>
   <div class="app">
     <div class="header">
-      <div class="title">echarts4 demo</div>
+      <div class="title">
+        <logo class="logo" />
+        <span>echarts4 demo</span>
+      </div>
       <div class="right">
         <a href="https://github.com/daGaiGuanYu/echarts4-demo">github</a>
       </div>
@@ -31,12 +34,14 @@
   </div>
 </template>
 <script>
+import logo from './logo.vue';
 import all from '../examples/index.js';
 import echarts from 'echarts';
 import 'echarts/map/js/china.js' // 引入中国地图数据
 import 'echarts/map/js/province/liaoning.js' // 引入辽宁省地图数据
 
 export default {
+  components: { logo },
   data(){
     return {
       all
